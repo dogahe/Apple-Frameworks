@@ -1,0 +1,11 @@
+framework module FoodItem {
+  umbrella header "FoodItem.h"
+
+  export *
+  module * { export * }
+}
+
+module FoodItem.Swift {
+    header "FoodItem-Swift.h"
+    requires objc
+}
