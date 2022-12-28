@@ -23,10 +23,11 @@ let package = Package(
     ),
     .binaryTarget(
       name: "FoodItem",
-      path: "FoodItem.xcframework"),
+      url:
+        "https://github.com/dogahe/Apple-Frameworks/releases/download/1.0.0/FoodItem.zip",
+      checksum: "7978321702d42ba9130dbeee577903eea8c6aa7b4ac23d517a8c8d496ea4ca63"),
     .testTarget(
       name: "FoodItemBinaryTests",
       dependencies: ["FoodItemBinary"]),
   ]
 )
-
